@@ -18,22 +18,6 @@ export async function getStudentDetail(paramId) {
     }
 }
 
-function getProperFilename(filename) {
-    const fileExtension = filename.split('.').pop().toLowerCase();
-    const allowedExtensions = {
-        png: 'image/png',
-        jpeg: 'image/jpeg',
-        jpg: 'image/jpeg',
-    };
-
-    for (const ext in allowedExtensions) {
-        if (allowedExtensions.hasOwnProperty(ext) && allowedExtensions[ext] === response.type) {
-            return `${filename}.${ext}`;
-        }
-    }
-    return filename;
-}
-
 export async function getDownload(filename) {
     try {
         const response = await instance.get(`/student/download/${filename}`, {
