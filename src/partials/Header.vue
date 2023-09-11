@@ -22,7 +22,7 @@ const logout = () => {
     <div class="fixed w-full flex items-center justify-between h-14 z-10 bg-[#1da2b2]">
         <router-link to="/zis">
             <div :class="getDrawel ? 'flex items-center justify-start md:justify-center pl-3 w-14 h-14 border-none': 'flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 border-none' ">
-                <img src="../../assets/2685867_9189-removebg.png" alt="icon" class="h-20 w-20">
+                <!-- <img src="../../assets/2685867_9189-removebg.png" alt="icon" class="h-20 w-20"> -->
             </div>
         </router-link>
         <div class="flex justify-between items-center h-14 w-full px-4">
